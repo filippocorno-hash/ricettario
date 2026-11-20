@@ -6,14 +6,19 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 const SUPABASE_URL = 'https://gfjxzraddkxjzncjxfjm.supabase.co'
-const KEY = process.env.SUPABASE_SECRET_KEY
+// Il segreto incollato può contenere spazi, a capo o anche la versione mascherata della
+// chiave: si tiene solo un token valido (sb_secret_... o una chiave legacy JWT).
+const KEY = (process.env.SUPABASE_SECRET_KEY ?? '')
+  .split(/\s+/)
+  .filter((t) => /^sb_secret_[A-Za-z0-9_-]+$/.test(t) || /^eyJ[A-Za-z0-9_.-]+$/.test(t))
+  .sort((a, b) => b.length - a.length)[0]
 const DIR = 'ricette'
 const DIR_RIFIUTATE = path.join(DIR, 'Rifiutate')
 const FILE_ELENCO = path.join(DIR, '_rifiutate.json')
 const CATEGORIE = new Set(['pranzo', 'cena', 'cena post palestra', 'pranzo ufficio'])
 
 if (!KEY) {
-  console.error('Manca il segreto SUPABASE_SECRET_KEY nelle impostazioni del repository.')
+  console.error('Il segreto SUPABASE_SECRET_KEY manca o non contiene una chiave valida (sb_secret_...).')
   process.exit(1)
 }
 const sb = createClient(SUPABASE_URL, KEY, { auth: { persistSession: false, autoRefreshToken: false } })
