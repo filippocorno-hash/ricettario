@@ -236,7 +236,7 @@ button.pericolo { background: #fbe4df; color: var(--rosso); border: none; border
 .porzioni span { font-size: 0.9rem; min-width: 84px; text-align: center; }
 
 .ingredienti { list-style: none; padding: 0; margin: 0; }
-.ingredienti li { display: grid; grid-template-columns: 96px 1fr; gap: 10px; padding: 7px 0; border-bottom: 1px solid #f0ebe1; }
+.ingredienti li { display: grid; grid-template-columns: 118px 1fr; gap: 10px; padding: 7px 0; border-bottom: 1px solid #f0ebe1; }
 .ingredienti li:last-child { border-bottom: none; }
 .ingredienti .q { font-weight: 600; font-variant-numeric: tabular-nums; }
 
@@ -247,8 +247,15 @@ button.pericolo { background: #fbe4df; color: var(--rosso); border: none; border
 .testo-ricetta.ufficio h2 { color: var(--verde); }
 
 .modifica-ingredienti { display: grid; gap: 6px; }
-.riga-ing { display: grid; grid-template-columns: 64px 104px 1fr 32px; gap: 6px; align-items: center; }
-.riga-ing input, .riga-ing select { padding: 8px; font-size: 1rem; border: 1px solid var(--bordo); border-radius: 8px; background: #fff; min-width: 0; }
+.riga-ing {
+  display: grid; grid-template-columns: 72px 1fr 32px; grid-template-areas: 'nome nome x' 'q u .';
+  gap: 6px; align-items: center; padding: 8px 0; border-bottom: 1px solid #f0ebe1;
+}
+.riga-ing > :nth-child(1) { grid-area: q; }
+.riga-ing > :nth-child(2) { grid-area: u; }
+.riga-ing > :nth-child(3) { grid-area: nome; }
+.riga-ing > :nth-child(4) { grid-area: x; }
+.riga-ing input, .riga-ing select { padding: 8px 10px; font-size: 1rem; border: 1px solid var(--bordo); border-radius: 8px; background: #fff; min-width: 0; }
 .riga-ing .x { border: none; background: none; font-size: 1.3rem; color: var(--rosso); }
 
 .icona-box { position: relative; display: inline-block; }
@@ -256,3 +263,38 @@ button.pericolo { background: #fbe4df; color: var(--rosso); border: none; border
   position: absolute; top: -4px; right: -12px; background: var(--rosso); color: #fff; font-size: 0.65rem; font-weight: 700;
   min-width: 17px; height: 17px; border-radius: 9px; display: grid; place-items: center; padding: 0 4px; filter: none;
 }
+
+/* --- Fase 3: profilo e obiettivi ---------------------------------------- */
+select {
+  width: 100%;
+  font: inherit;
+  font-size: 1rem;
+  padding: 12px 14px;
+  border: 1px solid var(--bordo);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--testo);
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--grigio) 50%), linear-gradient(135deg, var(--grigio) 50%, transparent 50%);
+  background-position: calc(100% - 18px) 52%, calc(100% - 13px) 52%;
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
+}
+input[type='range'] { padding: 0; border: none; accent-color: var(--verde); }
+.obiettivi { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.obiettivi > div { border: 1px solid var(--bordo); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 2px; }
+.obiettivi .evidenza { background: var(--verde-chiaro); border-color: transparent; }
+.obiettivi strong { font-size: 1.35rem; }
+.obiettivi span { font-size: 0.8rem; color: var(--grigio); }
+.etichetta-obj { font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.7rem !important; }
+.griglia-campi { display: grid; grid-template-columns: 1fr 1fr; gap: 0 10px; }
+.griglia-campi .intero { grid-column: 1 / -1; }
+.interruttore { display: flex; align-items: center; gap: 10px; font-weight: 500; margin-top: 16px; }
+.interruttore input { width: 20px; height: 20px; accent-color: var(--verde); flex: none; }
+.nota.piccola { font-size: 0.8rem; margin-top: 12px; }
+.riga-peso { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+.riga-peso button { margin: 0; width: auto; padding: 0 18px; }
+.pesate li { display: grid; grid-template-columns: 1fr auto 56px; }
+.pesate .giu { color: var(--verde); text-align: right; font-size: 0.9rem; }
+.pesate .su { color: var(--rosso); text-align: right; font-size: 0.9rem; }
+@media (max-width: 380px) { .obiettivi { grid-template-columns: 1fr; } }
