@@ -5,12 +5,12 @@ import { useSessione } from './lib/sessione'
 import Accesso from './pages/Accesso'
 import Benvenuto from './pages/Benvenuto'
 import Profilo from './pages/Profilo'
-import InArrivo from './pages/InArrivo'
 import NuovaPassword from './pages/NuovaPassword'
 import Ricettario from './pages/Ricettario'
 import DaValutare from './pages/DaValutare'
 import Ricetta from './pages/Ricetta'
 import Menu from './pages/Menu'
+import Spesa from './pages/Spesa'
 
 const VOCI = [
   { to: '/ricettario', label: 'Ricettario', icona: '📖' },
@@ -59,10 +59,7 @@ export default function App() {
           <Route path="/da-valutare" element={<DaValutare />} />
           <Route path="/ricetta/:id" element={<Ricetta />} />
           <Route path="/menu" element={<Menu />} />
-          <Route
-            path="/spesa"
-            element={<InArrivo titolo="Spesa" testo="La lista della spesa generata dal menu, divisa per reparto." />}
-          />
+          <Route path="/spesa" element={<Spesa />} />
           <Route path="/profilo" element={<Profilo />} />
           <Route path="*" element={<Navigate to="/ricettario" replace />} />
         </Routes>
