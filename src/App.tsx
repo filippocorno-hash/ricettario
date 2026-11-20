@@ -4,6 +4,7 @@ import Accesso from './pages/Accesso'
 import Benvenuto from './pages/Benvenuto'
 import Profilo from './pages/Profilo'
 import InArrivo from './pages/InArrivo'
+import NuovaPassword from './pages/NuovaPassword'
 
 const VOCI = [
   { to: '/ricettario', label: 'Ricettario', icona: '📖' },
@@ -14,7 +15,7 @@ const VOCI = [
 ]
 
 export default function App() {
-  const { caricamento, sessione, famigliaId } = useSessione()
+  const { caricamento, sessione, famigliaId, recuperoPassword } = useSessione()
 
   if (caricamento) {
     return (
@@ -24,6 +25,7 @@ export default function App() {
     )
   }
   if (!sessione) return <Accesso />
+  if (recuperoPassword) return <NuovaPassword />
   if (!famigliaId) return <Benvenuto />
 
   return (

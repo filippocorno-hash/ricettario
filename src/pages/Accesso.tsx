@@ -1,39 +1,68 @@
 import { useState, type FormEvent } from 'react'
-import { messaggioErrore, supabase } from '../lib/supabase'
+import { erroreDaLink, messaggioErrore, supabase } from '../lib/supabase'
 
-// Accesso con codice a 6 cifre via email: funziona anche dall'app installata
-// sul telefono (un link nell'email aprirebbe Safari/Chrome invece della PWA).
+type Modalita = 'accedi' | 'registrati' | 'recupero'
+
+const URL_APP = `${window.location.origin}${import.meta.env.BASE_URL}`
+
+function traduci(msg: string): string {
+  if (/invalid login credentials/i.test(msg)) return 'Email o password non corretti.'
+  if (/email not confirmed/i.test(msg)) return 'Devi prima confermare l’email: apri il link che ti abbiamo mandato.'
+  if (/already registered/i.test(msg)) return 'Questa email è già registrata: accedi.'
+  if (/at least \d+ characters/i.test(msg)) return 'La password deve avere almeno 8 caratteri.'
+  if (/rate limit/i.test(msg)) return 'Troppi tentativi ravvicinati: riprova tra qualche minuto.'
+  return msg
+}
+
+// Accesso con email e password. Alla registrazione Supabase manda un link di conferma
+// (il server email gratuito di Supabase non permette di inviare codici).
 export default function Accesso() {
+  const [modalita, setModalita] = useState<Modalita>('accedi')
   const [email, setEmail] = useState('')
-  const [codice, setCodice] = useState('')
-  const [fase, setFase] = useState<'email' | 'codice'>('email')
+  const [password, setPassword] = useState('')
   const [invio, setInvio] = useState(false)
-  const [errore, setErrore] = useState<string | null>(null)
+  const [errore, setErrore] = useState<string | null>(
+    erroreDaLink ? 'Il link dell’email non è più valido (forse è scaduto o è già stato usato). Prova ad accedere o richiedine uno nuovo.' : null,
+  )
+  const [avviso, setAvviso] = useState<string | null>(null)
 
-  async function inviaCodice(e: FormEvent) {
-    e.preventDefault()
+  function cambia(m: Modalita) {
+    setModalita(m)
     setErrore(null)
-    setInvio(true)
-    const { error } = await supabase.auth.signInWithOtp({
-      email: email.trim(),
-      options: { shouldCreateUser: true },
-    })
-    setInvio(false)
-    if (error) setErrore(messaggioErrore(error))
-    else setFase('codice')
+    setAvviso(null)
   }
 
-  async function verifica(e: FormEvent) {
+  async function conferma(e: FormEvent) {
     e.preventDefault()
     setErrore(null)
+    setAvviso(null)
     setInvio(true)
-    const { error } = await supabase.auth.verifyOtp({
-      email: email.trim(),
-      token: codice.trim(),
-      type: 'email',
-    })
-    setInvio(false)
-    if (error) setErrore('Codice non valido o scaduto. Controlla l’email o richiedine uno nuovo.')
+    try {
+      if (modalita === 'accedi') {
+        const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password })
+        if (error) throw error
+      } else if (modalita === 'registrati') {
+        if (password.length < 8) throw new Error('at least 8 characters')
+        const { data, error } = await supabase.auth.signUp({
+          email: email.trim(),
+          password,
+          options: { emailRedirectTo: URL_APP },
+        })
+        if (error) throw error
+        if (!data.session) {
+          setAvviso('Ti abbiamo mandato un’email: apri il link per confermare l’indirizzo, poi torna qui e accedi.')
+          setModalita('accedi')
+        }
+      } else {
+        const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), { redirectTo: URL_APP })
+        if (error) throw error
+        setAvviso('Se l’email è registrata, ti arriverà un link per scegliere una nuova password.')
+      }
+    } catch (err) {
+      setErrore(traduci(messaggioErrore(err)))
+    } finally {
+      setInvio(false)
+    }
   }
 
   return (
@@ -43,48 +72,60 @@ export default function Accesso() {
         <h1>Ricettario</h1>
         <p className="sottotitolo">Ricette, menu della settimana e lista della spesa.</p>
 
-        {fase === 'email' ? (
-          <form onSubmit={inviaCodice}>
-            <label htmlFor="email">La tua email</label>
-            <input
-              id="email"
-              type="email"
-              autoComplete="email"
-              inputMode="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="nome@esempio.it"
-            />
-            <button className="primario" disabled={invio}>
-              {invio ? 'Invio…' : 'Mandami il codice'}
+        {modalita !== 'recupero' && (
+          <div className="schede-scelta" role="tablist">
+            <button role="tab" aria-selected={modalita === 'accedi'} className={modalita === 'accedi' ? 'attiva' : ''} onClick={() => cambia('accedi')}>
+              Accedi
             </button>
-          </form>
-        ) : (
-          <form onSubmit={verifica}>
-            <p>
-              Ti abbiamo mandato un codice a <strong>{email}</strong>. Scrivilo qui sotto.
-            </p>
-            <label htmlFor="codice">Codice</label>
-            <input
-              id="codice"
-              inputMode="numeric"
-              autoComplete="one-time-code"
-              pattern="[0-9]{6,10}"
-              required
-              value={codice}
-              onChange={(e) => setCodice(e.target.value.replace(/\D/g, ''))}
-              placeholder="123456"
-              className="codice"
-            />
-            <button className="primario" disabled={invio}>
-              {invio ? 'Verifica…' : 'Entra'}
+            <button role="tab" aria-selected={modalita === 'registrati'} className={modalita === 'registrati' ? 'attiva' : ''} onClick={() => cambia('registrati')}>
+              Registrati
             </button>
-            <button type="button" className="link" onClick={() => { setFase('email'); setCodice('') }}>
-              Usa un’altra email o richiedi un nuovo codice
-            </button>
-          </form>
+          </div>
         )}
+
+        <form onSubmit={conferma}>
+          <label htmlFor="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            autoComplete="email"
+            inputMode="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="nome@esempio.it"
+          />
+          {modalita !== 'recupero' && (
+            <>
+              <label htmlFor="password">Password</label>
+              <input
+                id="password"
+                type="password"
+                autoComplete={modalita === 'registrati' ? 'new-password' : 'current-password'}
+                required
+                minLength={modalita === 'registrati' ? 8 : undefined}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              {modalita === 'registrati' && <p className="nota">Almeno 8 caratteri.</p>}
+            </>
+          )}
+          <button className="primario" disabled={invio}>
+            {invio ? 'Un attimo…' : modalita === 'accedi' ? 'Entra' : modalita === 'registrati' ? 'Crea l’account' : 'Mandami il link'}
+          </button>
+        </form>
+
+        {modalita === 'accedi' && (
+          <button type="button" className="link" onClick={() => cambia('recupero')}>
+            Password dimenticata?
+          </button>
+        )}
+        {modalita === 'recupero' && (
+          <button type="button" className="link" onClick={() => cambia('accedi')}>
+            Torna all’accesso
+          </button>
+        )}
+        {avviso && <p className="avviso" role="status">{avviso}</p>}
         {errore && <p className="errore" role="alert">{errore}</p>}
       </div>
     </div>

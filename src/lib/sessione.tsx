@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from 'react'
 import type { Session } from '@supabase/supabase-js'
-import { supabase } from './supabase'
+import { linkDiRecupero, supabase } from './supabase'
 
 export type Ruolo = 'admin' | 'membro'
 
@@ -17,6 +17,8 @@ interface StatoSessione {
   ruolo: Ruolo | null
   profilo: Profilo | null
   ricarica: () => Promise<void>
+  recuperoPassword: boolean
+  fineRecupero: () => void
 }
 
 const Ctx = createContext<StatoSessione | null>(null)
@@ -27,6 +29,7 @@ export function SessioneProvider({ children }: { children: ReactNode }) {
   const [ruolo, setRuolo] = useState<Ruolo | null>(null)
   const [profilo, setProfilo] = useState<Profilo | null>(null)
   const [caricamento, setCaricamento] = useState(true)
+  const [recuperoPassword, setRecuperoPassword] = useState(linkDiRecupero)
 
   const caricaMembro = useCallback(async (s: Session | null) => {
     if (!s) {
@@ -64,6 +67,7 @@ export function SessioneProvider({ children }: { children: ReactNode }) {
     })
     const { data: sub } = supabase.auth.onAuthStateChange((evento, s) => {
       setSessione(s)
+      if (evento === 'PASSWORD_RECOVERY') setRecuperoPassword(true)
       if (evento === 'SIGNED_IN' || evento === 'SIGNED_OUT') {
         setCaricamento(true)
         // fuori dalla callback, come raccomandato da supabase-js
@@ -86,7 +90,18 @@ export function SessioneProvider({ children }: { children: ReactNode }) {
   }, [caricaMembro, sessione])
 
   return (
-    <Ctx.Provider value={{ caricamento, sessione, famigliaId, ruolo, profilo, ricarica }}>
+    <Ctx.Provider
+      value={{
+        caricamento,
+        sessione,
+        famigliaId,
+        ruolo,
+        profilo,
+        ricarica,
+        recuperoPassword,
+        fineRecupero: () => setRecuperoPassword(false),
+      }}
+    >
       {children}
     </Ctx.Provider>
   )
