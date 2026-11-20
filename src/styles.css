@@ -298,3 +298,57 @@ input[type='range'] { padding: 0; border: none; accent-color: var(--verde); }
 .pesate .giu { color: var(--verde); text-align: right; font-size: 0.9rem; }
 .pesate .su { color: var(--rosso); text-align: right; font-size: 0.9rem; }
 @media (max-width: 380px) { .obiettivi { grid-template-columns: 1fr; } }
+
+/* --- Fase 4: menu settimanale ------------------------------------------- */
+.settimana-nav { display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; text-align: center; margin-bottom: 12px; }
+.settimana-nav > button { height: 44px; border-radius: 50%; border: 1px solid var(--bordo); background: #fff; font-size: 1.4rem; color: var(--verde); }
+.settimana-nav strong { display: block; font-size: 1.05rem; }
+button.link.piccolo { font-size: 0.85rem; padding: 4px 0 0; }
+button.link.rosso { color: var(--rosso); }
+.ufficio-settimana { border-color: #cfe0c9; margin-bottom: 12px; }
+.riga-titolo { display: flex; justify-content: space-between; align-items: center; }
+.titolo-ufficio { display: block; font-weight: 650; font-size: 1.1rem; color: var(--testo); text-decoration: none; margin-top: 8px; }
+.varianti { list-style: none; padding: 0; margin: 8px 0; }
+.varianti li { display: flex; justify-content: space-between; gap: 8px; padding: 6px 0; border-bottom: 1px solid #f0ebe1; font-size: 0.92rem; }
+.varianti li .nota { margin: 0; white-space: nowrap; }
+.extra { font-size: 0.92rem; margin-top: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.extra select { width: auto; padding: 6px 30px 6px 10px; font-size: 0.9rem; }
+
+.giorno { background: #fff; border: 1px solid var(--bordo); border-radius: var(--raggio); padding: 12px 14px; margin-bottom: 10px; }
+.giorno.oggi { border-color: var(--verde); box-shadow: 0 0 0 1px var(--verde) inset; }
+.giorno-testa { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+.giorno-testa strong { text-transform: capitalize; }
+.palestra { border: 1px dashed var(--bordo); background: none; border-radius: 999px; padding: 4px 10px; font-size: 0.8rem; color: var(--grigio); }
+.palestra.attiva { border: 1px solid #f4b8a8; background: #fde3dc; color: #a23b1e; font-weight: 600; }
+.cucina { display: block; background: var(--verde-chiaro); color: var(--verde); border-radius: 10px; padding: 8px 10px; font-size: 0.88rem; text-decoration: none; margin-bottom: 6px; }
+.slot { display: grid; grid-template-columns: 58px 1fr; align-items: center; gap: 8px; padding: 6px 0; border-top: 1px solid #f0ebe1; }
+.slot-pasto { font-size: 0.78rem; font-weight: 600; color: var(--grigio); text-transform: uppercase; letter-spacing: 0.04em; }
+.slot-piatto, .slot-vuoto { text-align: left; border: none; background: none; padding: 4px 0; min-height: 40px; }
+.slot-piatto { display: flex; flex-direction: column; color: var(--testo); }
+.slot-titolo { font-weight: 600; line-height: 1.3; }
+.slot-dettagli { font-size: 0.8rem; color: var(--grigio); }
+.slot-vuoto { color: var(--verde); font-weight: 600; }
+.extra-giorno { margin: 2px 0 0 66px; }
+.totale-giorno { border-top: 1px solid #f0ebe1; padding-top: 8px; margin-top: 4px; font-size: 0.82rem; color: var(--grigio); }
+.totale-giorno strong { color: var(--testo); }
+.barra-kcal { position: relative; height: 6px; background: #efe9dd; border-radius: 3px; margin-bottom: 6px; overflow: visible; }
+.barra-kcal span { display: block; height: 100%; border-radius: 3px; background: var(--verde); }
+.barra-kcal span.oltre { background: #d9822b; }
+.barra-kcal i { position: absolute; top: -3px; width: 2px; height: 12px; background: var(--testo); opacity: 0.5; }
+
+.velo { position: fixed; inset: 0; background: rgb(0 0 0 / 0.35); display: flex; align-items: flex-end; justify-content: center; z-index: 20; }
+.foglio {
+  background: var(--crema); width: 100%; max-width: 560px; max-height: 88dvh; display: flex; flex-direction: column; gap: 8px;
+  border-radius: 18px 18px 0 0; padding: 14px 16px calc(16px + env(safe-area-inset-bottom));
+}
+.foglio-testa { display: flex; justify-content: space-between; align-items: center; }
+.foglio-testa strong { text-transform: none; }
+.chiudi { border: none; background: #fff; width: 34px; height: 34px; border-radius: 50%; font-size: 1.3rem; }
+.foglio-elenco { overflow-y: auto; display: grid; gap: 6px; padding-bottom: 4px; }
+.voce-scelta { text-align: left; background: #fff; border: 1px solid var(--bordo); border-radius: 12px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; }
+.voce-titolo { font-weight: 600; }
+.voce-dati { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 0.85rem; color: var(--grigio); }
+button.largo { width: 100%; margin-top: 4px; }
+.riga-porzioni { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; }
+a.bottone { display: flex; align-items: center; justify-content: center; text-decoration: none; border-radius: 10px; padding: 13px; font-weight: 600; flex: 1 1 auto; }
+a.bottone.secondario { background: var(--verde-chiaro); color: var(--verde); }

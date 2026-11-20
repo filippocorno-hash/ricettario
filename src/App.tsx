@@ -10,6 +10,7 @@ import NuovaPassword from './pages/NuovaPassword'
 import Ricettario from './pages/Ricettario'
 import DaValutare from './pages/DaValutare'
 import Ricetta from './pages/Ricetta'
+import Menu from './pages/Menu'
 
 const VOCI = [
   { to: '/ricettario', label: 'Ricettario', icona: '📖' },
@@ -57,10 +58,7 @@ export default function App() {
           <Route path="/ricettario" element={<Ricettario />} />
           <Route path="/da-valutare" element={<DaValutare />} />
           <Route path="/ricetta/:id" element={<Ricetta />} />
-          <Route
-            path="/menu"
-            element={<InArrivo titolo="Menu" testo="Il menu settimanale di pranzi e cene, con il pranzo ufficio del lunedì." />}
-          />
+          <Route path="/menu" element={<Menu />} />
           <Route
             path="/spesa"
             element={<InArrivo titolo="Spesa" testo="La lista della spesa generata dal menu, divisa per reparto." />}
