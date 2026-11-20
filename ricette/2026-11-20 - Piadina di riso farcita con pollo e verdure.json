@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "titolo": "Piadina di riso (senza farina) farcita con pollo e verdure",
+  "file_md": "2026-11-20 - Piadina di riso farcita con pollo e verdure.md",
+  "data_aggiunta": "2026-11-20",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "alan_valca",
+    "url": "https://www.instagram.com/alan_valca/reel/DfuIgInIR_x/",
+    "codice_post": "DfuIgInIR_x"
+  },
+  "categorie": [
+    "pranzo",
+    "cena"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 45,
+  "tempo_attivo_min": 30,
+  "difficolta": "facile",
+  "tipo_piatto": "wrap o panino",
+  "tag": [
+    "senza glutine",
+    "carne bianca"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 520,
+    "proteine_g": 39.4,
+    "carboidrati_g": 64.2,
+    "grassi_g": 11.3,
+    "fibre_g": 2.2
+  },
+  "ingredienti": [
+    {
+      "nome": "riso",
+      "quantita": 150,
+      "unita": "g",
+      "grammi": 150,
+      "reparto": "Pasta riso e cereali",
+      "gruppo": "Base (4 piadine)",
+      "opzionale": false
+    },
+    {
+      "nome": "acqua",
+      "quantita": 120,
+      "unita": "ml",
+      "grammi": null,
+      "reparto": "Altro",
+      "gruppo": "Base (4 piadine)",
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 12,
+      "unita": "g",
+      "grammi": 12,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Base (4 piadine)",
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Base (4 piadine)",
+      "opzionale": false
+    },
+    {
+      "nome": "petto di pollo",
+      "quantita": 200,
+      "unita": "g",
+      "grammi": 200,
+      "reparto": "Carne e pesce",
+      "gruppo": "Farcitura",
+      "opzionale": false
+    },
+    {
+      "nome": "verdure miste",
+      "quantita": 200,
+      "unita": "g",
+      "grammi": 200,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Farcitura",
+      "opzionale": false
+    },
+    {
+      "nome": "mozzarella light",
+      "quantita": 80,
+      "unita": "g",
+      "grammi": 80,
+      "reparto": "Latticini e uova",
+      "gruppo": "Farcitura",
+      "opzionale": false
+    },
+    {
+      "nome": "yogurt greco 0%",
+      "quantita": 40,
+      "unita": "g",
+      "grammi": 40,
+      "reparto": "Latticini e uova",
+      "gruppo": "Farcitura",
+      "opzionale": true
+    }
+  ],
+  "pranzo_ufficio": null
+}

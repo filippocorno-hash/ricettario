@@ -1,0 +1,43 @@
+name: Sincronizza ricette
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ricette/**'
+      - 'scripts/sincronizza-ricette.mjs'
+  schedule:
+    - cron: '17 5 * * *' # ogni giorno: aggiorna l'elenco delle rifiutate prima dell'attività
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sincronizza-ricette
+  cancel-in-progress: false
+
+jobs:
+  sincronizza:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Importa le proposte e aggiorna le rifiutate
+        run: node scripts/sincronizza-ricette.mjs
+        env:
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      - name: Salva l'elenco delle rifiutate
+        run: |
+          if ! git diff --quiet -- ricette/_rifiutate.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add ricette/_rifiutate.json
+            git commit -m "Aggiorna l'elenco delle ricette rifiutate"
+            git pull --rebase
+            git push
+          fi

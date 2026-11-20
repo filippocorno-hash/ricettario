@@ -1,10 +1,15 @@
-import { NavLink, Navigate, Route, Routes } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { supabase } from './lib/supabase'
 import { useSessione } from './lib/sessione'
 import Accesso from './pages/Accesso'
 import Benvenuto from './pages/Benvenuto'
 import Profilo from './pages/Profilo'
 import InArrivo from './pages/InArrivo'
 import NuovaPassword from './pages/NuovaPassword'
+import Ricettario from './pages/Ricettario'
+import DaValutare from './pages/DaValutare'
+import Ricetta from './pages/Ricetta'
 
 const VOCI = [
   { to: '/ricettario', label: 'Ricettario', icona: '📖' },
@@ -14,8 +19,24 @@ const VOCI = [
   { to: '/profilo', label: 'Profilo', icona: '👤' },
 ]
 
+/** Numero di proposte da valutare, aggiornato a ogni cambio di pagina. */
+function useProposte(attivo: boolean) {
+  const [n, setN] = useState(0)
+  const { pathname } = useLocation()
+  useEffect(() => {
+    if (!attivo) return
+    supabase
+      .from('ricette')
+      .select('id', { count: 'exact', head: true })
+      .eq('stato', 'proposta')
+      .then(({ count }) => setN(count ?? 0))
+  }, [attivo, pathname])
+  return n
+}
+
 export default function App() {
   const { caricamento, sessione, famigliaId, recuperoPassword } = useSessione()
+  const proposte = useProposte(!!famigliaId)
 
   if (caricamento) {
     return (
@@ -33,14 +54,9 @@ export default function App() {
       <main className="contenuto">
         <Routes>
           <Route path="/" element={<Navigate to="/ricettario" replace />} />
-          <Route
-            path="/ricettario"
-            element={<InArrivo titolo="Ricettario" testo="Qui troverai le ricette accettate, con ricerca e filtri per categoria." />}
-          />
-          <Route
-            path="/da-valutare"
-            element={<InArrivo titolo="Da valutare" testo="Qui arriveranno le ricette proposte dall'attività su Instagram, da accettare o rifiutare." />}
-          />
+          <Route path="/ricettario" element={<Ricettario />} />
+          <Route path="/da-valutare" element={<DaValutare />} />
+          <Route path="/ricetta/:id" element={<Ricetta />} />
           <Route
             path="/menu"
             element={<InArrivo titolo="Menu" testo="Il menu settimanale di pranzi e cene, con il pranzo ufficio del lunedì." />}
@@ -56,7 +72,10 @@ export default function App() {
       <nav className="barra" aria-label="Sezioni">
         {VOCI.map((v) => (
           <NavLink key={v.to} to={v.to} className={({ isActive }) => (isActive ? 'voce attiva' : 'voce')}>
-            <span className="icona" aria-hidden>{v.icona}</span>
+            <span className="icona-box">
+              <span className="icona" aria-hidden>{v.icona}</span>
+              {v.to === '/da-valutare' && proposte > 0 && <span className="badge" aria-label={`${proposte} da valutare`}>{proposte}</span>}
+            </span>
             <span>{v.label}</span>
           </NavLink>
         ))}

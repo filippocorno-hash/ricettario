@@ -1,0 +1,434 @@
+{
+  "schema": 1,
+  "titolo": "Insalata tiepida di farro, patata dolce e ceci croccanti",
+  "file_md": "2026-11-20 - Insalata di farro patata dolce e ceci.md",
+  "data_aggiunta": "2026-11-20",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "cucinabotanica",
+    "url": "https://www.instagram.com/cucinabotanica/reel/Df4XPPtMQTA/",
+    "codice_post": "Df4XPPtMQTA"
+  },
+  "categorie": [
+    "cena",
+    "pranzo ufficio"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 45,
+  "tempo_attivo_min": 15,
+  "difficolta": "facile",
+  "tipo_piatto": "insalata",
+  "tag": [
+    "vegetariano",
+    "legumi",
+    "forno",
+    "si conserva",
+    "da portare al lavoro"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 680,
+    "proteine_g": 24.1,
+    "carboidrati_g": 97.0,
+    "grassi_g": 23.3,
+    "fibre_g": 15.6
+  },
+  "ingredienti": [
+    {
+      "nome": "farro perlato",
+      "quantita": 120,
+      "unita": "g",
+      "grammi": 120,
+      "reparto": "Pasta riso e cereali",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "patata dolce",
+      "quantita": 300,
+      "unita": "g",
+      "grammi": 300,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "ceci lessati",
+      "quantita": 150,
+      "unita": "g",
+      "grammi": 150,
+      "reparto": "Legumi e conserve",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "rucola",
+      "quantita": 60,
+      "unita": "g",
+      "grammi": 60,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "cipolla rossa",
+      "quantita": 0.25,
+      "unita": "pz",
+      "grammi": 30,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "feta",
+      "quantita": 60,
+      "unita": "g",
+      "grammi": 60,
+      "reparto": "Latticini e uova",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "melograno",
+      "quantita": 1,
+      "unita": "cucchiaio",
+      "grammi": 15,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 2,
+      "unita": "cucchiaino",
+      "grammi": 10,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "paprika affumicata",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "tahina",
+      "quantita": 2,
+      "unita": "cucchiaio",
+      "grammi": 30,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Salsa",
+      "opzionale": false
+    },
+    {
+      "nome": "senape",
+      "quantita": 0.5,
+      "unita": "cucchiaino",
+      "grammi": 3,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Salsa",
+      "opzionale": false
+    },
+    {
+      "nome": "sciroppo d'acero",
+      "quantita": 0.5,
+      "unita": "cucchiaio",
+      "grammi": 10,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Salsa",
+      "opzionale": false
+    },
+    {
+      "nome": "limone",
+      "quantita": 0.5,
+      "unita": "pz",
+      "grammi": 20,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Salsa",
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Salsa",
+      "opzionale": false
+    },
+    {
+      "nome": "acqua",
+      "quantita": 3,
+      "unita": "cucchiaio",
+      "grammi": null,
+      "reparto": "Altro",
+      "gruppo": "Salsa",
+      "opzionale": false
+    }
+  ],
+  "pranzo_ufficio": {
+    "porzioni": 4,
+    "ingredienti_base": [
+      {
+        "nome": "farro perlato",
+        "quantita": 240,
+        "unita": "g",
+        "grammi": 240,
+        "reparto": "Pasta riso e cereali",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "patata dolce",
+        "quantita": 600,
+        "unita": "g",
+        "grammi": 600,
+        "reparto": "Frutta e verdura",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "ceci lessati",
+        "quantita": 300,
+        "unita": "g",
+        "grammi": 300,
+        "reparto": "Legumi e conserve",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "olio extravergine d'oliva",
+        "quantita": 4,
+        "unita": "cucchiaino",
+        "grammi": 20,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "sale",
+        "quantita": null,
+        "unita": "q.b.",
+        "grammi": null,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "paprika affumicata",
+        "quantita": null,
+        "unita": "q.b.",
+        "grammi": null,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "tahina",
+        "quantita": 3,
+        "unita": "cucchiaio",
+        "grammi": 45,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": "Salsa (a parte)",
+        "opzionale": false
+      },
+      {
+        "nome": "senape",
+        "quantita": 1,
+        "unita": "cucchiaino",
+        "grammi": 5,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": "Salsa (a parte)",
+        "opzionale": false
+      },
+      {
+        "nome": "sciroppo d'acero",
+        "quantita": 1,
+        "unita": "cucchiaio",
+        "grammi": 20,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": "Salsa (a parte)",
+        "opzionale": false
+      },
+      {
+        "nome": "limone",
+        "quantita": 1,
+        "unita": "pz",
+        "grammi": 40,
+        "reparto": "Frutta e verdura",
+        "gruppo": "Salsa (a parte)",
+        "opzionale": false
+      },
+      {
+        "nome": "sale",
+        "quantita": null,
+        "unita": "q.b.",
+        "grammi": null,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": "Salsa (a parte)",
+        "opzionale": false
+      },
+      {
+        "nome": "acqua",
+        "quantita": 5,
+        "unita": "cucchiaio",
+        "grammi": null,
+        "reparto": "Altro",
+        "gruppo": "Salsa (a parte)",
+        "opzionale": false
+      }
+    ],
+    "varianti": [
+      {
+        "nome": "Variante A – classica con feta e melograno",
+        "porzioni": 2,
+        "giorni": [
+          "martedì",
+          "extra"
+        ],
+        "quando": "lunedì",
+        "istruzioni": "Il lunedì aggiungi nei due contenitori feta sbriciolata, melograno e cipolla affettata sottile. La rucola mettila in un sacchetto a parte e uniscila prima di mangiare.",
+        "ingredienti_extra": [
+          {
+            "nome": "feta",
+            "quantita": 40,
+            "unita": "g",
+            "grammi": 40,
+            "reparto": "Latticini e uova",
+            "gruppo": null,
+            "opzionale": false
+          },
+          {
+            "nome": "melograno",
+            "quantita": 2,
+            "unita": "cucchiaio",
+            "grammi": 30,
+            "reparto": "Frutta e verdura",
+            "gruppo": null,
+            "opzionale": false
+          },
+          {
+            "nome": "cipolla rossa",
+            "quantita": 0.25,
+            "unita": "pz",
+            "grammi": 30,
+            "reparto": "Frutta e verdura",
+            "gruppo": null,
+            "opzionale": false
+          },
+          {
+            "nome": "rucola",
+            "quantita": 40,
+            "unita": "g",
+            "grammi": 40,
+            "reparto": "Frutta e verdura",
+            "gruppo": null,
+            "opzionale": false
+          }
+        ],
+        "nutrizione_porzione": {
+          "kcal": 630,
+          "proteine_g": 21.9,
+          "carboidrati_g": 96.8,
+          "grassi_g": 19.2,
+          "fibre_g": 15.4
+        }
+      },
+      {
+        "nome": "Variante B – mediterranea con pomodorini e olive",
+        "porzioni": 1,
+        "giorni": [
+          "mercoledì"
+        ],
+        "quando": "lunedì",
+        "istruzioni": "Il lunedì aggiungi nel contenitore le olive; i pomodorini tagliali la mattina stessa (tagliati dal lunedì diventano acquosi). Spinacino a parte.",
+        "ingredienti_extra": [
+          {
+            "nome": "pomodorino",
+            "quantita": 80,
+            "unita": "g",
+            "grammi": 80,
+            "reparto": "Frutta e verdura",
+            "gruppo": null,
+            "opzionale": false
+          },
+          {
+            "nome": "olive taggiasche",
+            "quantita": 10,
+            "unita": "g",
+            "grammi": 10,
+            "reparto": "Legumi e conserve",
+            "gruppo": null,
+            "opzionale": false
+          },
+          {
+            "nome": "spinacino",
+            "quantita": 30,
+            "unita": "g",
+            "grammi": 30,
+            "reparto": "Frutta e verdura",
+            "gruppo": null,
+            "opzionale": false
+          }
+        ],
+        "nutrizione_porzione": {
+          "kcal": 590,
+          "proteine_g": 19.8,
+          "carboidrati_g": 95.7,
+          "grassi_g": 16.4,
+          "fibre_g": 16.1
+        }
+      },
+      {
+        "nome": "Variante C – proteica con tonno",
+        "porzioni": 1,
+        "giorni": [
+          "giovedì"
+        ],
+        "quando": "mattina stessa",
+        "istruzioni": "Porta la scatoletta di tonno chiusa e aggiungila al momento con la rucola, così resta fresco.",
+        "ingredienti_extra": [
+          {
+            "nome": "tonno al naturale",
+            "quantita": 1,
+            "unita": "pz",
+            "grammi": 56,
+            "reparto": "Legumi e conserve",
+            "gruppo": null,
+            "opzionale": false
+          },
+          {
+            "nome": "rucola",
+            "quantita": 20,
+            "unita": "g",
+            "grammi": 20,
+            "reparto": "Frutta e verdura",
+            "gruppo": null,
+            "opzionale": false
+          }
+        ],
+        "nutrizione_porzione": {
+          "kcal": 620,
+          "proteine_g": 32.7,
+          "carboidrati_g": 91.8,
+          "grassi_g": 14.9,
+          "fibre_g": 14.5
+        }
+      }
+    ],
+    "conservazione_giorni": 3,
+    "riscaldamento": "È buona a temperatura ambiente: tirala fuori dal frigo dell'ufficio 20 minuti prima. Se la preferisci tiepida: microonde 800 W per 40-60 secondi senza salsa e senza foglie, poi condisci."
+  }
+}

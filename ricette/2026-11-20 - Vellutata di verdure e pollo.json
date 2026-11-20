@@ -1,0 +1,397 @@
+{
+  "schema": 1,
+  "titolo": "Vellutata di verdure e pollo",
+  "file_md": "2026-11-20 - Vellutata di verdure e pollo.md",
+  "data_aggiunta": "2026-11-20",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "andrianakulchytska",
+    "url": "https://www.instagram.com/andrianakulchytska/reel/Df2lPKNB1FX/",
+    "codice_post": "Df2lPKNB1FX"
+  },
+  "categorie": [
+    "pranzo",
+    "cena",
+    "pranzo ufficio"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 50,
+  "tempo_attivo_min": 15,
+  "difficolta": "facile",
+  "tipo_piatto": "zuppa",
+  "tag": [
+    "carne bianca",
+    "si conserva",
+    "da portare al lavoro"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 430,
+    "proteine_g": 32.5,
+    "carboidrati_g": 57.6,
+    "grassi_g": 8.4,
+    "fibre_g": 7.3
+  },
+  "ingredienti": [
+    {
+      "nome": "patata",
+      "quantita": 500,
+      "unita": "g",
+      "grammi": 500,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "carota",
+      "quantita": 2,
+      "unita": "pz",
+      "grammi": 150,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "peperone",
+      "quantita": 0.5,
+      "unita": "pz",
+      "grammi": 80,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "cipolla bianca",
+      "quantita": 0.5,
+      "unita": "pz",
+      "grammi": 40,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "aglio",
+      "quantita": 1,
+      "unita": "spicchio",
+      "grammi": 3,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "sovracoscia di pollo senza pelle",
+      "quantita": 2,
+      "unita": "pz",
+      "grammi": 250,
+      "reparto": "Carne e pesce",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "formaggio spalmabile light",
+      "quantita": 2,
+      "unita": "cucchiaio",
+      "grammi": 40,
+      "reparto": "Latticini e uova",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "alloro",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "paprika dolce",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "aglio in polvere",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "erbe aromatiche secche",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": 1,
+      "unita": "cucchiaino",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "prezzemolo",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "acqua",
+      "quantita": 750,
+      "unita": "ml",
+      "grammi": null,
+      "reparto": "Altro",
+      "gruppo": null,
+      "opzionale": false
+    }
+  ],
+  "pranzo_ufficio": {
+    "porzioni": 4,
+    "ingredienti_base": [
+      {
+        "nome": "patata",
+        "quantita": 1000,
+        "unita": "g",
+        "grammi": 1000,
+        "reparto": "Frutta e verdura",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "carota",
+        "quantita": 4,
+        "unita": "pz",
+        "grammi": 300,
+        "reparto": "Frutta e verdura",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "peperone",
+        "quantita": 1,
+        "unita": "pz",
+        "grammi": 160,
+        "reparto": "Frutta e verdura",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "cipolla bianca",
+        "quantita": 1,
+        "unita": "pz",
+        "grammi": 80,
+        "reparto": "Frutta e verdura",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "aglio",
+        "quantita": 2,
+        "unita": "spicchio",
+        "grammi": 6,
+        "reparto": "Frutta e verdura",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "sovracoscia di pollo senza pelle",
+        "quantita": 4,
+        "unita": "pz",
+        "grammi": 500,
+        "reparto": "Carne e pesce",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "formaggio spalmabile light",
+        "quantita": 4,
+        "unita": "cucchiaio",
+        "grammi": 80,
+        "reparto": "Latticini e uova",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "alloro",
+        "quantita": null,
+        "unita": "q.b.",
+        "grammi": null,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "paprika dolce",
+        "quantita": null,
+        "unita": "q.b.",
+        "grammi": null,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "aglio in polvere",
+        "quantita": null,
+        "unita": "q.b.",
+        "grammi": null,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "erbe aromatiche secche",
+        "quantita": null,
+        "unita": "q.b.",
+        "grammi": null,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "sale",
+        "quantita": 1.5,
+        "unita": "cucchiaino",
+        "grammi": null,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "prezzemolo",
+        "quantita": null,
+        "unita": "q.b.",
+        "grammi": null,
+        "reparto": "Frutta e verdura",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "acqua",
+        "quantita": 1400,
+        "unita": "ml",
+        "grammi": null,
+        "reparto": "Altro",
+        "gruppo": null,
+        "opzionale": false
+      }
+    ],
+    "varianti": [
+      {
+        "nome": "Variante A – con crostini integrali",
+        "porzioni": 2,
+        "giorni": [
+          "martedì",
+          "extra"
+        ],
+        "quando": "lunedì",
+        "istruzioni": "Il lunedì tosta 4 fette di pane integrale (2 per porzione) in padella asciutta a fiamma media, 2 minuti per lato, e mettile in un sacchetto: aggiungile alla vellutata calda al momento.",
+        "ingredienti_extra": [
+          {
+            "nome": "pane integrale",
+            "quantita": 4,
+            "unita": "pz",
+            "grammi": 60,
+            "reparto": "Pane e sostituti",
+            "gruppo": null,
+            "opzionale": false
+          }
+        ],
+        "nutrizione_porzione": {
+          "kcal": 500,
+          "proteine_g": 35.2,
+          "carboidrati_g": 69.9,
+          "grassi_g": 9.3,
+          "fibre_g": 9.4
+        }
+      },
+      {
+        "nome": "Variante B – con ceci e rosmarino",
+        "porzioni": 1,
+        "giorni": [
+          "mercoledì"
+        ],
+        "quando": "lunedì",
+        "istruzioni": "Il lunedì aggiungi i ceci scolati e un pizzico di rosmarino direttamente nel contenitore: si scaldano con la vellutata.",
+        "ingredienti_extra": [
+          {
+            "nome": "ceci lessati",
+            "quantita": 60,
+            "unita": "g",
+            "grammi": 60,
+            "reparto": "Legumi e conserve",
+            "gruppo": null,
+            "opzionale": false
+          },
+          {
+            "nome": "rosmarino",
+            "quantita": null,
+            "unita": "q.b.",
+            "grammi": null,
+            "reparto": "Olio condimenti e spezie",
+            "gruppo": null,
+            "opzionale": false
+          }
+        ],
+        "nutrizione_porzione": {
+          "kcal": 510,
+          "proteine_g": 37.0,
+          "carboidrati_g": 69.0,
+          "grassi_g": 9.9,
+          "fibre_g": 10.9
+        }
+      },
+      {
+        "nome": "Variante C – con parmigiano e pepe nero",
+        "porzioni": 1,
+        "giorni": [
+          "giovedì"
+        ],
+        "quando": "mattina stessa",
+        "istruzioni": "Porta il parmigiano in un vasetto a parte e aggiungilo sulla vellutata appena scaldata, con una macinata di pepe.",
+        "ingredienti_extra": [
+          {
+            "nome": "parmigiano grattugiato",
+            "quantita": 15,
+            "unita": "g",
+            "grammi": 15,
+            "reparto": "Latticini e uova",
+            "gruppo": null,
+            "opzionale": false
+          },
+          {
+            "nome": "pepe",
+            "quantita": null,
+            "unita": "q.b.",
+            "grammi": null,
+            "reparto": "Olio condimenti e spezie",
+            "gruppo": null,
+            "opzionale": false
+          }
+        ],
+        "nutrizione_porzione": {
+          "kcal": 490,
+          "proteine_g": 37.5,
+          "carboidrati_g": 57.6,
+          "grassi_g": 12.6,
+          "fibre_g": 7.3
+        }
+      }
+    ],
+    "conservazione_giorni": 3,
+    "riscaldamento": "Microonde 800 W con il coperchio appoggiato (non chiuso): 2 minuti, mescola, poi altri 1-1,5 minuti finché fuma in modo uniforme. Se si è addensata aggiungi un cucchiaio d'acqua."
+  }
+}

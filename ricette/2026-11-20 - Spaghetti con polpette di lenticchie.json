@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "titolo": "Spaghetti con polpette di lenticchie al sugo",
+  "file_md": "2026-11-20 - Spaghetti con polpette di lenticchie.md",
+  "data_aggiunta": "2026-11-20",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "cucinabotanica",
+    "url": "https://www.instagram.com/cucinabotanica/reel/Dfrfo2fs30A/",
+    "codice_post": "Dfrfo2fs30A"
+  },
+  "categorie": [
+    "cena"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 60,
+  "tempo_attivo_min": 25,
+  "difficolta": "facile",
+  "tipo_piatto": "primo",
+  "tag": [
+    "vegetariano",
+    "vegano",
+    "legumi",
+    "forno",
+    "si conserva",
+    "da portare al lavoro"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 710,
+    "proteine_g": 29.9,
+    "carboidrati_g": 120.7,
+    "grassi_g": 9.7,
+    "fibre_g": 13.0
+  },
+  "ingredienti": [
+    {
+      "nome": "lenticchie rosse secche",
+      "quantita": 100,
+      "unita": "g",
+      "grammi": 100,
+      "reparto": "Legumi e conserve",
+      "gruppo": "Polpette",
+      "opzionale": false
+    },
+    {
+      "nome": "cipolla dorata",
+      "quantita": 0.5,
+      "unita": "pz",
+      "grammi": 50,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Polpette",
+      "opzionale": false
+    },
+    {
+      "nome": "patata",
+      "quantita": 1,
+      "unita": "pz",
+      "grammi": 80,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Polpette",
+      "opzionale": false
+    },
+    {
+      "nome": "carota",
+      "quantita": 1,
+      "unita": "pz",
+      "grammi": 70,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Polpette",
+      "opzionale": false
+    },
+    {
+      "nome": "brodo vegetale",
+      "quantita": 500,
+      "unita": "ml",
+      "grammi": 500,
+      "reparto": "Altro",
+      "gruppo": "Polpette",
+      "opzionale": false
+    },
+    {
+      "nome": "pangrattato",
+      "quantita": 40,
+      "unita": "g",
+      "grammi": 40,
+      "reparto": "Pane e sostituti",
+      "gruppo": "Polpette",
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 1,
+      "unita": "cucchiaino",
+      "grammi": 5,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Polpette",
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Polpette",
+      "opzionale": false
+    },
+    {
+      "nome": "pepe",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Polpette",
+      "opzionale": false
+    },
+    {
+      "nome": "aglio in polvere",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Polpette",
+      "opzionale": false
+    },
+    {
+      "nome": "paprika dolce",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Polpette",
+      "opzionale": false
+    },
+    {
+      "nome": "passata di pomodoro",
+      "quantita": 300,
+      "unita": "g",
+      "grammi": 300,
+      "reparto": "Legumi e conserve",
+      "gruppo": "Sugo e pasta",
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 1,
+      "unita": "cucchiaino",
+      "grammi": 5,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Sugo e pasta",
+      "opzionale": false
+    },
+    {
+      "nome": "basilico",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Sugo e pasta",
+      "opzionale": false
+    },
+    {
+      "nome": "spaghetti",
+      "quantita": 160,
+      "unita": "g",
+      "grammi": 160,
+      "reparto": "Pasta riso e cereali",
+      "gruppo": "Sugo e pasta",
+      "opzionale": false
+    },
+    {
+      "nome": "parmigiano grattugiato",
+      "quantita": 1,
+      "unita": "cucchiaio",
+      "grammi": 8,
+      "reparto": "Latticini e uova",
+      "gruppo": "Sugo e pasta",
+      "opzionale": true
+    }
+  ],
+  "pranzo_ufficio": null
+}

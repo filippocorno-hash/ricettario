@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "titolo": "Panino senza pane con carta di riso, tacchino e rucola",
+  "file_md": "2026-11-20 - Panino senza pane con carta di riso.md",
+  "data_aggiunta": "2026-11-20",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "cottoaldente",
+    "url": "https://www.instagram.com/cottoaldente/reel/Df9gN7gMs7o/",
+    "codice_post": "Df9gN7gMs7o"
+  },
+  "categorie": [
+    "pranzo"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 20,
+  "tempo_attivo_min": 10,
+  "difficolta": "facile",
+  "tipo_piatto": "wrap o panino",
+  "tag": [
+    "senza glutine",
+    "carne bianca",
+    "friggitrice ad aria"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 230,
+    "proteine_g": 21.9,
+    "carboidrati_g": 16.1,
+    "grassi_g": 9.0,
+    "fibre_g": 0.3
+  },
+  "ingredienti": [
+    {
+      "nome": "carta di riso",
+      "quantita": 4,
+      "unita": "pz",
+      "grammi": 36,
+      "reparto": "Pasta riso e cereali",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "uovo",
+      "quantita": 2,
+      "unita": "pz",
+      "grammi": 110,
+      "reparto": "Latticini e uova",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "fesa di tacchino affettata",
+      "quantita": 100,
+      "unita": "g",
+      "grammi": 100,
+      "reparto": "Carne e pesce",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "stracchino light",
+      "quantita": 60,
+      "unita": "g",
+      "grammi": 60,
+      "reparto": "Latticini e uova",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "rucola",
+      "quantita": 20,
+      "unita": "g",
+      "grammi": 20,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "pepe",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    }
+  ],
+  "pranzo_ufficio": null
+}

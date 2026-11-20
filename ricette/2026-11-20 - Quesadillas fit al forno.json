@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "titolo": "Quesadillas fit al forno con manzo e formaggio light",
+  "file_md": "2026-11-20 - Quesadillas fit al forno.md",
+  "data_aggiunta": "2026-11-20",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "alan_valca",
+    "url": "https://www.instagram.com/alan_valca/reel/Df7ZhVLouua/",
+    "codice_post": "Df7ZhVLouua"
+  },
+  "categorie": [
+    "cena post palestra"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 30,
+  "tempo_attivo_min": 20,
+  "difficolta": "facile",
+  "tipo_piatto": "piatto unico",
+  "tag": [
+    "carne rossa",
+    "forno"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 710,
+    "proteine_g": 54.7,
+    "carboidrati_g": 59.5,
+    "grassi_g": 26.4,
+    "fibre_g": 4.2
+  },
+  "ingredienti": [
+    {
+      "nome": "macinato di manzo magro",
+      "quantita": 300,
+      "unita": "g",
+      "grammi": 300,
+      "reparto": "Carne e pesce",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "cipolla bianca",
+      "quantita": 1,
+      "unita": "pz",
+      "grammi": 110,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "concentrato di pomodoro",
+      "quantita": 25,
+      "unita": "g",
+      "grammi": 25,
+      "reparto": "Legumi e conserve",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "salsa bbq light",
+      "quantita": 2,
+      "unita": "cucchiaio",
+      "grammi": 30,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "formaggio light da sciogliere",
+      "quantita": 100,
+      "unita": "g",
+      "grammi": 100,
+      "reparto": "Latticini e uova",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "paprika dolce",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "aglio in polvere",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "pepe",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "peperoncino",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "tortilla",
+      "quantita": 3,
+      "unita": "pz",
+      "grammi": 180,
+      "reparto": "Pane e sostituti",
+      "gruppo": "Base",
+      "opzionale": false
+    },
+    {
+      "nome": "formaggio light da sciogliere",
+      "quantita": 50,
+      "unita": "g",
+      "grammi": 50,
+      "reparto": "Latticini e uova",
+      "gruppo": "Base",
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 1,
+      "unita": "cucchiaino",
+      "grammi": 6,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Base",
+      "opzionale": false
+    },
+    {
+      "nome": "prezzemolo",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Base",
+      "opzionale": false
+    }
+  ],
+  "pranzo_ufficio": null
+}

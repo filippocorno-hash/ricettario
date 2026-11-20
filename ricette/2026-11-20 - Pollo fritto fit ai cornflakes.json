@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "titolo": "Pollo \"fritto\" fit ai cornflakes (friggitrice ad aria o forno)",
+  "file_md": "2026-11-20 - Pollo fritto fit ai cornflakes.md",
+  "data_aggiunta": "2026-11-20",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "alan_valca",
+    "url": "https://www.instagram.com/alan_valca/reel/DfwtwTgIvZo/",
+    "codice_post": "DfwtwTgIvZo"
+  },
+  "categorie": [
+    "pranzo",
+    "cena"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 150,
+  "tempo_attivo_min": 30,
+  "difficolta": "facile",
+  "tipo_piatto": "secondo",
+  "tag": [
+    "carne bianca",
+    "friggitrice ad aria",
+    "forno"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 320,
+    "proteine_g": 42.2,
+    "carboidrati_g": 29.1,
+    "grassi_g": 4.5,
+    "fibre_g": 1.2
+  },
+  "ingredienti": [
+    {
+      "nome": "petto di pollo",
+      "quantita": 300,
+      "unita": "g",
+      "grammi": 300,
+      "reparto": "Carne e pesce",
+      "gruppo": "Marinatura",
+      "opzionale": false
+    },
+    {
+      "nome": "lime",
+      "quantita": 0.5,
+      "unita": "pz",
+      "grammi": 15,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Marinatura",
+      "opzionale": false
+    },
+    {
+      "nome": "yogurt greco 0%",
+      "quantita": 45,
+      "unita": "g",
+      "grammi": 45,
+      "reparto": "Latticini e uova",
+      "gruppo": "Marinatura",
+      "opzionale": false
+    },
+    {
+      "nome": "uovo",
+      "quantita": 0.5,
+      "unita": "pz",
+      "grammi": 30,
+      "reparto": "Latticini e uova",
+      "gruppo": "Marinatura",
+      "opzionale": false
+    },
+    {
+      "nome": "senape",
+      "quantita": 1,
+      "unita": "cucchiaino",
+      "grammi": 5,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Marinatura",
+      "opzionale": false
+    },
+    {
+      "nome": "salsa di soia",
+      "quantita": 1,
+      "unita": "cucchiaio",
+      "grammi": 16,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Marinatura",
+      "opzionale": false
+    },
+    {
+      "nome": "salsa bbq light",
+      "quantita": 1,
+      "unita": "cucchiaio",
+      "grammi": 15,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Marinatura",
+      "opzionale": true
+    },
+    {
+      "nome": "paprika dolce",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Marinatura",
+      "opzionale": false
+    },
+    {
+      "nome": "aglio in polvere",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Marinatura",
+      "opzionale": false
+    },
+    {
+      "nome": "pepe",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Marinatura",
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Marinatura",
+      "opzionale": false
+    },
+    {
+      "nome": "cornflakes",
+      "quantita": 60,
+      "unita": "g",
+      "grammi": 60,
+      "reparto": "Pasta riso e cereali",
+      "gruppo": "Panatura",
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 1,
+      "unita": "cucchiaino",
+      "grammi": 3,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Panatura",
+      "opzionale": false
+    },
+    {
+      "nome": "paprika dolce",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Panatura",
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Panatura",
+      "opzionale": false
+    }
+  ],
+  "pranzo_ufficio": null
+}

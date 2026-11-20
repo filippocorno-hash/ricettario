@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "titolo": "Wrap di zucchine e mozzarella con salmone",
+  "file_md": "2026-11-20 - Wrap di zucchine con salmone.md",
+  "data_aggiunta": "2026-11-20",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "cottoaldente",
+    "url": "https://www.instagram.com/cottoaldente/reel/DfreXc8MZC3/",
+    "codice_post": "DfreXc8MZC3"
+  },
+  "categorie": [
+    "pranzo",
+    "cena"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 35,
+  "tempo_attivo_min": 10,
+  "difficolta": "facile",
+  "tipo_piatto": "wrap o panino",
+  "tag": [
+    "pesce",
+    "senza glutine",
+    "forno"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 300,
+    "proteine_g": 27.6,
+    "carboidrati_g": 6.7,
+    "grassi_g": 17.9,
+    "fibre_g": 2.4
+  },
+  "ingredienti": [
+    {
+      "nome": "zucchina",
+      "quantita": 400,
+      "unita": "g",
+      "grammi": 400,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "mozzarella",
+      "quantita": 80,
+      "unita": "g",
+      "grammi": 80,
+      "reparto": "Latticini e uova",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 2,
+      "unita": "cucchiaino",
+      "grammi": 10,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "pepe",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "formaggio spalmabile proteico",
+      "quantita": 80,
+      "unita": "g",
+      "grammi": 80,
+      "reparto": "Latticini e uova",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "salmone affumicato",
+      "quantita": 100,
+      "unita": "g",
+      "grammi": 100,
+      "reparto": "Carne e pesce",
+      "gruppo": null,
+      "opzionale": false
+    }
+  ],
+  "pranzo_ufficio": null
+}

@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "titolo": "Rotolo di patate ripieno di carne",
+  "file_md": "2026-11-20 - Rotolo di patate ripieno di carne.md",
+  "data_aggiunta": "2026-11-20",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "giuseppe_healthy",
+    "url": "https://www.instagram.com/giuseppe_healthy/reel/DfzQN65NDsa/",
+    "codice_post": "DfzQN65NDsa"
+  },
+  "categorie": [
+    "pranzo",
+    "cena"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 55,
+  "tempo_attivo_min": 25,
+  "difficolta": "facile",
+  "tipo_piatto": "piatto unico",
+  "tag": [
+    "carne rossa",
+    "forno"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 450,
+    "proteine_g": 39.0,
+    "carboidrati_g": 30.6,
+    "grassi_g": 18.6,
+    "fibre_g": 3.0
+  },
+  "ingredienti": [
+    {
+      "nome": "patata",
+      "quantita": 300,
+      "unita": "g",
+      "grammi": 300,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Base",
+      "opzionale": false
+    },
+    {
+      "nome": "parmigiano grattugiato",
+      "quantita": 75,
+      "unita": "g",
+      "grammi": 75,
+      "reparto": "Latticini e uova",
+      "gruppo": "Base",
+      "opzionale": false
+    },
+    {
+      "nome": "macinato di manzo magro",
+      "quantita": 200,
+      "unita": "g",
+      "grammi": 200,
+      "reparto": "Carne e pesce",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "cipolla bianca",
+      "quantita": 0.5,
+      "unita": "pz",
+      "grammi": 40,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "concentrato di pomodoro",
+      "quantita": 1,
+      "unita": "cucchiaio",
+      "grammi": 15,
+      "reparto": "Legumi e conserve",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 0.5,
+      "unita": "cucchiaino",
+      "grammi": 2.5,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "pepe",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "paprika dolce",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Ripieno",
+      "opzionale": false
+    },
+    {
+      "nome": "formaggio light da sciogliere",
+      "quantita": 1,
+      "unita": "pz",
+      "grammi": 20,
+      "reparto": "Latticini e uova",
+      "gruppo": "Ripieno",
+      "opzionale": true
+    }
+  ],
+  "pranzo_ufficio": null
+}

@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "titolo": "Bocconcini di pollo e patate (friggitrice ad aria o forno)",
+  "file_md": "2026-11-20 - Bocconcini di pollo e patate al forno.md",
+  "data_aggiunta": "2026-11-20",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "giuseppe_healthy",
+    "url": "https://www.instagram.com/giuseppe_healthy/reel/Df9jG9XNPyO/",
+    "codice_post": "Df9jG9XNPyO"
+  },
+  "categorie": [
+    "pranzo",
+    "cena"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 40,
+  "tempo_attivo_min": 15,
+  "difficolta": "facile",
+  "tipo_piatto": "piatto unico",
+  "tag": [
+    "carne bianca",
+    "friggitrice ad aria",
+    "forno"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 490,
+    "proteine_g": 54.4,
+    "carboidrati_g": 43.1,
+    "grassi_g": 11.4,
+    "fibre_g": 3.6
+  },
+  "ingredienti": [
+    {
+      "nome": "petto di pollo",
+      "quantita": 350,
+      "unita": "g",
+      "grammi": 350,
+      "reparto": "Carne e pesce",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "patata",
+      "quantita": 400,
+      "unita": "g",
+      "grammi": 400,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "parmigiano grattugiato",
+      "quantita": 50,
+      "unita": "g",
+      "grammi": 50,
+      "reparto": "Latticini e uova",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "pangrattato",
+      "quantita": 2,
+      "unita": "cucchiaio",
+      "grammi": 20,
+      "reparto": "Pane e sostituti",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 1,
+      "unita": "cucchiaino",
+      "grammi": 5,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "pepe",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "paprika dolce",
+      "quantita": 1,
+      "unita": "cucchiaino",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    }
+  ],
+  "pranzo_ufficio": null
+}

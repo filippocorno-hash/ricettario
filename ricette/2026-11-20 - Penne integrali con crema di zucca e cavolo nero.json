@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "titolo": "Penne integrali con crema di zucca e chips di cavolo nero",
+  "file_md": "2026-11-20 - Penne integrali con crema di zucca e cavolo nero.md",
+  "data_aggiunta": "2026-11-20",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "cucinabotanica",
+    "url": "https://www.instagram.com/cucinabotanica/reel/Df7PjPuM11i/",
+    "codice_post": "Df7PjPuM11i"
+  },
+  "categorie": [
+    "pranzo",
+    "cena"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 35,
+  "tempo_attivo_min": 20,
+  "difficolta": "facile",
+  "tipo_piatto": "primo",
+  "tag": [
+    "vegetariano"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 480,
+    "proteine_g": 17.1,
+    "carboidrati_g": 65.5,
+    "grassi_g": 14.8,
+    "fibre_g": 10.9
+  },
+  "ingredienti": [
+    {
+      "nome": "penne integrali",
+      "quantita": 160,
+      "unita": "g",
+      "grammi": 160,
+      "reparto": "Pasta riso e cereali",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "zucca delica",
+      "quantita": 250,
+      "unita": "g",
+      "grammi": 250,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "aglio",
+      "quantita": 1,
+      "unita": "spicchio",
+      "grammi": 3,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "parmigiano grattugiato",
+      "quantita": 15,
+      "unita": "g",
+      "grammi": 15,
+      "reparto": "Latticini e uova",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 1,
+      "unita": "cucchiaio",
+      "grammi": 15,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "brodo vegetale",
+      "quantita": 200,
+      "unita": "ml",
+      "grammi": 200,
+      "reparto": "Altro",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "pepe",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "cavolo nero",
+      "quantita": 80,
+      "unita": "g",
+      "grammi": 80,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Per finire",
+      "opzionale": false
+    },
+    {
+      "nome": "paprika dolce",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Per finire",
+      "opzionale": false
+    },
+    {
+      "nome": "aglio in polvere",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Per finire",
+      "opzionale": false
+    },
+    {
+      "nome": "mandorle a lamelle",
+      "quantita": 10,
+      "unita": "g",
+      "grammi": 10,
+      "reparto": "Altro",
+      "gruppo": "Per finire",
+      "opzionale": false
+    }
+  ],
+  "pranzo_ufficio": null
+}
