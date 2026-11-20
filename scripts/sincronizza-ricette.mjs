@@ -21,6 +21,9 @@ if (!KEY) {
   console.error('Il segreto SUPABASE_SECRET_KEY manca o non contiene una chiave valida (sb_secret_...).')
   process.exit(1)
 }
+// Diagnostica sicura: solo lunghezza e numero di "parole" incollate, mai la chiave.
+const grezzo = process.env.SUPABASE_SECRET_KEY ?? ''
+console.log(`Chiave: ${KEY.length} caratteri (incollate ${grezzo.split(/\s+/).filter(Boolean).length} parole)`)
 const sb = createClient(SUPABASE_URL, KEY, { auth: { persistSession: false, autoRefreshToken: false } })
 
 async function famiglia() {
