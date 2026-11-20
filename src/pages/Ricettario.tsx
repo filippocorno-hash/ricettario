@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import CartaRicetta, { type RicettaBreve } from '../components/CartaRicetta'
 import { CAMPI_ELENCO, CATEGORIE, ETICHETTA_CATEGORIA, type Categoria } from '../lib/ricette'
 import { messaggioErrore, supabase } from '../lib/supabase'
@@ -36,7 +37,10 @@ export default function Ricettario() {
 
   return (
     <section>
-      <h1>Ricettario</h1>
+      <div className="intestazione-sezione">
+        <h1>Ricettario</h1>
+        <Link to="/ricetta/nuova" className="bottone-piccolo">+ Nuova</Link>
+      </div>
       <input
         type="search"
         className="cerca"

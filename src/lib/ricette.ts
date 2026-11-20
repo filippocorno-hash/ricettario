@@ -72,6 +72,7 @@ export interface Ricetta {
   fonte_url: string | null
   data_aggiunta: string
   creata_il: string
+  creata_da?: string | null
 }
 
 export const CAMPI_ELENCO =

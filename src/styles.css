@@ -377,3 +377,17 @@ a.bottone.secondario { background: var(--verde-chiaro); color: var(--verde); }
 .riga-disp select { padding-right: 26px; }
 ul.voci.scheda { padding: 0 14px; }
 ul.voci.scheda li { padding: 4px 0; }
+
+/* --- Fase 6: ricette a mano e ricalcolo ---------------------------------- */
+textarea {
+  width: 100%; font: inherit; font-size: 1rem; padding: 12px 14px; border: 1px solid var(--bordo); border-radius: 10px; background: #fff; resize: vertical;
+}
+.bottone-piccolo { background: var(--verde); color: #fff; text-decoration: none; border-radius: 999px; padding: 8px 14px; font-weight: 600; font-size: 0.9rem; }
+.riga-ing input.sconosciuto { border-color: #e9a85b; background: #fff8ee; }
+.modifica-nutrizione { margin-top: 14px; }
+.griglia-nutr { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.griglia-nutr label { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 2px; font-weight: 500; }
+.griglia-nutr input { padding: 8px 4px; text-align: center; font-weight: 650; }
+.griglia-nutr span { font-size: 0.72rem; color: var(--grigio); }
+form h2 { margin-top: 1.6em; }
+.intero-riga { grid-column: 1 / -1; margin: 0; }

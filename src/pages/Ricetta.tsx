@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ElencoCategorie } from '../components/Categorie'
+import EditorIngredienti from '../components/EditorIngredienti'
+import { caricaAlimenti, calcolaNutrizione, type Alimento } from '../lib/alimenti'
 import {
   CATEGORIE,
   ETICHETTA_CATEGORIA,
-  UNITA,
   minuti,
   perGruppo,
   quantitaLeggibile,
@@ -20,13 +21,28 @@ interface Bozza {
   titolo: string
   categorie: Categoria[]
   ingredienti: Ingrediente[]
+  kcal: number | null
+  proteine_g: number | null
+  carboidrati_g: number | null
+  grassi_g: number | null
+  fibre_g: number | null
 }
+
+const CAMPI_NUTR = [
+  ['kcal', 'kcal'],
+  ['proteine_g', 'proteine'],
+  ['carboidrati_g', 'carboidrati'],
+  ['grassi_g', 'grassi'],
+  ['fibre_g', 'fibre'],
+] as const
 
 export default function Ricetta() {
   const { id } = useParams()
   const navigate = useNavigate()
-  const { ruolo } = useSessione()
+  const { ruolo, sessione } = useSessione()
   const admin = ruolo === 'admin'
+  const [alimenti, setAlimenti] = useState<Map<string, Alimento>>(new Map())
+  const [mancanti, setMancanti] = useState<string[] | null>(null)
 
   const [r, setR] = useState<TRicetta | null>(null)
   const [errore, setErrore] = useState<string | null>(null)
@@ -61,6 +77,7 @@ export default function Ricetta() {
   if (!r) return <div className="caricamento piccolo" />
 
   const proposta = r.stato === 'proposta'
+  const puoModificare = admin || (r.origine === 'manuale' && r.creata_da === sessione?.user.id)
   const fattore = porzioni / r.porzioni
 
   async function salva(): Promise<boolean> {
@@ -68,7 +85,16 @@ export default function Ricetta() {
     const ingredienti = bozza.ingredienti.filter((i) => i.nome.trim())
     const { error } = await supabase
       .from('ricette')
-      .update({ titolo: bozza.titolo.trim() || r.titolo, categorie: bozza.categorie, ingredienti })
+      .update({
+        titolo: bozza.titolo.trim() || r.titolo,
+        categorie: bozza.categorie,
+        ingredienti,
+        kcal: bozza.kcal,
+        proteine_g: bozza.proteine_g,
+        carboidrati_g: bozza.carboidrati_g,
+        grassi_g: bozza.grassi_g,
+        fibre_g: bozza.fibre_g,
+      })
       .eq('id', r.id)
     if (error) {
       setErrore(messaggioErrore(error))
@@ -112,18 +138,27 @@ export default function Ricetta() {
       if (await salva()) setAvviso('Modifiche salvate.')
     })
 
-  function modificaIngrediente(idx: number, campo: keyof Ingrediente, valore: string) {
-    if (!bozza) return
-    const ingredienti = bozza.ingredienti.map((i, k) => {
-      if (k !== idx) return i
-      if (campo === 'quantita') {
-        const n = valore.trim() === '' ? null : Number(valore.replace(',', '.'))
-        return { ...i, quantita: n != null && Number.isFinite(n) ? n : i.quantita }
-      }
-      if (campo === 'unita') return { ...i, unita: valore, quantita: valore === 'q.b.' ? null : i.quantita }
-      return { ...i, [campo]: valore }
+  function apriModifica() {
+    if (!r) return
+    setMancanti(null)
+    caricaAlimenti().then(setAlimenti).catch(() => undefined)
+    setBozza({
+      titolo: r.titolo,
+      categorie: [...r.categorie],
+      ingredienti: r.ingredienti.map((i) => ({ ...i })),
+      kcal: r.kcal,
+      proteine_g: r.proteine_g,
+      carboidrati_g: r.carboidrati_g,
+      grassi_g: r.grassi_g,
+      fibre_g: r.fibre_g,
     })
-    setBozza({ ...bozza, ingredienti })
+  }
+
+  function ricalcola() {
+    if (!bozza || !r) return
+    const c = calcolaNutrizione(bozza.ingredienti, r.porzioni, alimenti)
+    setBozza({ ...bozza, ...c.porzione })
+    setMancanti(c.mancanti)
   }
 
   return (
@@ -180,7 +215,7 @@ export default function Ricetta() {
         )}
       </p>
 
-      {admin && (
+      {puoModificare && (
         <div className="azioni">
           {bozza ? (
             <>
@@ -192,15 +227,11 @@ export default function Ricetta() {
               </button>
             </>
           ) : (
-            <button
-              className="secondario"
-              disabled={lavoro}
-              onClick={() => setBozza({ titolo: r.titolo, categorie: [...r.categorie], ingredienti: r.ingredienti.map((i) => ({ ...i })) })}
-            >
+            <button className="secondario" disabled={lavoro} onClick={apriModifica}>
               Modifica
             </button>
           )}
-          {proposta && (
+          {proposta && admin && (
             <>
               <button className="pericolo" disabled={lavoro} onClick={rifiuta}>
                 Rifiuta
@@ -215,7 +246,35 @@ export default function Ricetta() {
       {avviso && <p className="avviso">{avviso}</p>}
       {errore && <p className="errore">{errore}</p>}
 
-      {r.kcal != null && (
+      {bozza ? (
+        <div className="scheda modifica-nutrizione">
+          <div className="griglia-nutr">
+            {CAMPI_NUTR.map(([k, etichetta]) => (
+              <label key={k}>
+                <input
+                  inputMode="decimal"
+                  value={bozza[k] ?? ''}
+                  onChange={(e) => {
+                    const v = e.target.value.replace(',', '.')
+                    setBozza({ ...bozza, [k]: v === '' ? null : Number.isFinite(Number(v)) ? Number(v) : bozza[k] })
+                  }}
+                />
+                <span>{etichetta}</span>
+              </label>
+            ))}
+          </div>
+          <button className="secondario" onClick={ricalcola} disabled={!alimenti.size}>
+            Ricalcola dagli ingredienti
+          </button>
+          {mancanti && (
+            <p className="nota">
+              {mancanti.length
+                ? `Non in tabella, esclusi dal calcolo: ${mancanti.join(', ')}. Correggi il nome o i valori a mano.`
+                : 'Ricalcolati da tutti gli ingredienti.'}
+            </p>
+          )}
+        </div>
+      ) : r.kcal != null && (
         <div className="nutrizione" aria-label="Valori a porzione">
           <div><strong>{r.kcal}</strong><span>kcal</span></div>
           <div><strong>{Math.round(r.proteine_g ?? 0)} g</strong><span>proteine</span></div>
@@ -239,38 +298,13 @@ export default function Ricetta() {
 
       {bozza ? (
         <div className="scheda">
-          <p className="nota">Dosi per {r.porzioni} porzioni. Le calorie non si ricalcolano da sole quando cambi le dosi.</p>
-          <div className="modifica-ingredienti">
-            {bozza.ingredienti.map((i, k) => (
-              <div className="riga-ing" key={k}>
-                <input value={i.quantita ?? ''} inputMode="decimal" placeholder="—" onChange={(e) => modificaIngrediente(k, 'quantita', e.target.value)} aria-label="Quantità" disabled={i.unita === 'q.b.'} />
-                <select value={i.unita} onChange={(e) => modificaIngrediente(k, 'unita', e.target.value)} aria-label="Unità">
-                  {UNITA.map((u) => (
-                    <option key={u} value={u}>{u}</option>
-                  ))}
-                </select>
-                <input value={i.nome} onChange={(e) => modificaIngrediente(k, 'nome', e.target.value)} aria-label="Ingrediente" />
-                <button
-                  className="x"
-                  aria-label={`Rimuovi ${i.nome}`}
-                  onClick={() => setBozza({ ...bozza, ingredienti: bozza.ingredienti.filter((_, j) => j !== k) })}
-                >
-                  ×
-                </button>
-              </div>
-            ))}
-          </div>
-          <button
-            className="link"
-            onClick={() =>
-              setBozza({
-                ...bozza,
-                ingredienti: [...bozza.ingredienti, { nome: '', quantita: null, unita: 'g', grammi: null, reparto: 'Altro', gruppo: null, opzionale: false }],
-              })
-            }
-          >
-            + Aggiungi ingrediente
-          </button>
+          <p className="nota">Dosi per {r.porzioni} porzioni. Dopo aver cambiato le dosi tocca “Ricalcola dagli ingredienti”.</p>
+          <EditorIngredienti
+            ingredienti={bozza.ingredienti}
+            originali={r.ingredienti}
+            alimenti={alimenti}
+            onChange={(ingredienti) => setBozza({ ...bozza, ingredienti })}
+          />
         </div>
       ) : (
         <div className="scheda">

@@ -65,6 +65,8 @@ export default function Profilo() {
   const [avviso, setAvviso] = useState<string | null>(null)
   const [salvataggio, setSalvataggio] = useState(false)
   const [manuale, setManuale] = useState(false)
+  const [nuovaPassword, setNuovaPassword] = useState('')
+  const [esitoPassword, setEsitoPassword] = useState<string | null>(null)
 
   useEffect(() => {
     if (!famigliaId || !uid) return
@@ -145,6 +147,18 @@ export default function Profilo() {
     setPesate((ps) => [data as Pesata, ...ps.filter((x) => x.data !== (data as Pesata).data)].slice(0, 10))
     set('peso_kg', String(p))
     setNuovoPeso('')
+  }
+
+  async function cambiaPassword(e: FormEvent) {
+    e.preventDefault()
+    setEsitoPassword(null)
+    if (nuovaPassword.length < 8) return setEsitoPassword('La password deve avere almeno 8 caratteri.')
+    const { error } = await supabase.auth.updateUser({ password: nuovaPassword })
+    if (error) setEsitoPassword(messaggioErrore(error))
+    else {
+      setNuovaPassword('')
+      setEsitoPassword('Password cambiata.')
+    }
   }
 
   async function creaInvito() {
@@ -316,6 +330,22 @@ export default function Profilo() {
           <p className="nota">Registra il peso ogni tanto: aggiorna anche il calcolo degli obiettivi.</p>
         )}
       </div>
+
+      <h2>Password</h2>
+      <form className="scheda riga-peso" onSubmit={cambiaPassword}>
+        <input
+          type="password"
+          autoComplete="new-password"
+          placeholder="Nuova password (min. 8 caratteri)"
+          value={nuovaPassword}
+          onChange={(e) => setNuovaPassword(e.target.value)}
+          aria-label="Nuova password"
+        />
+        <button className="primario" disabled={!nuovaPassword}>
+          Cambia
+        </button>
+        {esitoPassword && <p className="nota intero-riga">{esitoPassword}</p>}
+      </form>
 
       <h2>Famiglia</h2>
       <div className="scheda">

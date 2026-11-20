@@ -11,6 +11,7 @@ import DaValutare from './pages/DaValutare'
 import Ricetta from './pages/Ricetta'
 import Menu from './pages/Menu'
 import Spesa from './pages/Spesa'
+import NuovaRicetta from './pages/NuovaRicetta'
 
 const VOCI = [
   { to: '/ricettario', label: 'Ricettario', icona: '📖' },
@@ -57,6 +58,7 @@ export default function App() {
           <Route path="/" element={<Navigate to="/ricettario" replace />} />
           <Route path="/ricettario" element={<Ricettario />} />
           <Route path="/da-valutare" element={<DaValutare />} />
+          <Route path="/ricetta/nuova" element={<NuovaRicetta />} />
           <Route path="/ricetta/:id" element={<Ricetta />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/spesa" element={<Spesa />} />
