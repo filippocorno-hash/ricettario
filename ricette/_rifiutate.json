@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "titolo": "Panino senza pane con carta di riso, tacchino e rucola",
+    "file_md": "2026-11-20 - Panino senza pane con carta di riso.md",
+    "codice_post": "Df9gN7gMs7o",
+    "rifiutata_il": "2026-11-20T16:04:06.794607+00:00"
+  },
+  {
+    "titolo": "Quesadillas fit al forno con manzo e formaggio light",
+    "file_md": "2026-11-20 - Quesadillas fit al forno.md",
+    "codice_post": "Df7ZhVLouua",
+    "rifiutata_il": "2026-11-20T16:00:56.862857+00:00"
+  },
+  {
+    "titolo": "Spaghetti con polpette di lenticchie al sugo",
+    "file_md": "2026-11-20 - Spaghetti con polpette di lenticchie.md",
+    "codice_post": "Dfrfo2fs30A",
+    "rifiutata_il": "2026-11-20T15:59:11.732614+00:00"
+  }
+]
