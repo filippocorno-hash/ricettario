@@ -1,0 +1,342 @@
+{
+  "schema": 1,
+  "titolo": "Pastina cremosa ai porri e limone",
+  "file_md": "2026-11-23 - Pastina cremosa ai porri e limone.md",
+  "data_aggiunta": "2026-11-23",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "cucinabotanica",
+    "url": "https://www.instagram.com/cucinabotanica/reel/DgFOs2cMZoS/",
+    "codice_post": "DgFOs2cMZoS"
+  },
+  "categorie": [
+    "cena",
+    "pranzo ufficio"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 40,
+  "tempo_attivo_min": 20,
+  "difficolta": "facile",
+  "tipo_piatto": "primo",
+  "tag": [
+    "vegetariano",
+    "si conserva",
+    "da portare al lavoro"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 551,
+    "proteine_g": 22.2,
+    "carboidrati_g": 82.6,
+    "grassi_g": 13.9,
+    "fibre_g": 7.0
+  },
+  "ingredienti": [
+    {
+      "nome": "porro",
+      "quantita": 3,
+      "unita": "pz",
+      "grammi": 300,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "risoni",
+      "quantita": 200,
+      "unita": "g",
+      "grammi": 200,
+      "reparto": "Pasta riso e cereali",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "brodo vegetale",
+      "quantita": 600,
+      "unita": "ml",
+      "grammi": 600,
+      "reparto": "Altro",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 3,
+      "unita": "cucchiaino",
+      "grammi": 15,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "formaggio spalmabile light",
+      "quantita": 2,
+      "unita": "cucchiaio",
+      "grammi": 40,
+      "reparto": "Latticini e uova",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "parmigiano grattugiato",
+      "quantita": 15,
+      "unita": "g",
+      "grammi": 15,
+      "reparto": "Latticini e uova",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "limone",
+      "quantita": 1,
+      "unita": "pz",
+      "grammi": 100,
+      "reparto": "Frutta e verdura",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": null,
+      "opzionale": false
+    },
+    {
+      "nome": "yogurt greco 0%",
+      "quantita": 2,
+      "unita": "cucchiaio",
+      "grammi": 40,
+      "reparto": "Latticini e uova",
+      "gruppo": "Per finire",
+      "opzionale": false
+    },
+    {
+      "nome": "peperoncino",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Per finire",
+      "opzionale": false
+    }
+  ],
+  "pranzo_ufficio": {
+    "porzioni": 4,
+    "ingredienti_base": [
+      {
+        "nome": "porro",
+        "quantita": 6,
+        "unita": "pz",
+        "grammi": 600,
+        "reparto": "Frutta e verdura",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "risoni",
+        "quantita": 400,
+        "unita": "g",
+        "grammi": 400,
+        "reparto": "Pasta riso e cereali",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "brodo vegetale",
+        "quantita": 1300,
+        "unita": "ml",
+        "grammi": 1300,
+        "reparto": "Altro",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "olio extravergine d'oliva",
+        "quantita": 5,
+        "unita": "cucchiaino",
+        "grammi": 25,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "formaggio spalmabile light",
+        "quantita": 4,
+        "unita": "cucchiaio",
+        "grammi": 70,
+        "reparto": "Latticini e uova",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "parmigiano grattugiato",
+        "quantita": 30,
+        "unita": "g",
+        "grammi": 30,
+        "reparto": "Latticini e uova",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "limone",
+        "quantita": 2,
+        "unita": "pz",
+        "grammi": 200,
+        "reparto": "Frutta e verdura",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "sale",
+        "quantita": null,
+        "unita": "q.b.",
+        "grammi": null,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": null,
+        "opzionale": false
+      },
+      {
+        "nome": "yogurt greco 0%",
+        "quantita": 4,
+        "unita": "cucchiaio",
+        "grammi": 80,
+        "reparto": "Latticini e uova",
+        "gruppo": "Per finire",
+        "opzionale": false
+      },
+      {
+        "nome": "peperoncino",
+        "quantita": null,
+        "unita": "q.b.",
+        "grammi": null,
+        "reparto": "Olio condimenti e spezie",
+        "gruppo": "Per finire",
+        "opzionale": false
+      }
+    ],
+    "varianti": [
+      {
+        "nome": "Variante A – con ceci e paprika affumicata",
+        "porzioni": 2,
+        "giorni": [
+          "martedì",
+          "extra"
+        ],
+        "quando": "lunedì",
+        "istruzioni": "Sciacqua e asciuga i ceci, scaldali 3-4 minuti in padella antiaderente con la paprika e un pizzico di sale e dividili nei due contenitori sopra la pastina.",
+        "ingredienti_extra": [
+          {
+            "nome": "ceci lessati",
+            "quantita": 160,
+            "unita": "g",
+            "grammi": 160,
+            "reparto": "Legumi e conserve",
+            "gruppo": null,
+            "opzionale": false
+          },
+          {
+            "nome": "paprika affumicata",
+            "quantita": null,
+            "unita": "q.b.",
+            "grammi": null,
+            "reparto": "Olio condimenti e spezie",
+            "gruppo": null,
+            "opzionale": false
+          }
+        ],
+        "nutrizione_porzione": {
+          "kcal": 633,
+          "proteine_g": 27.7,
+          "carboidrati_g": 97.0,
+          "grassi_g": 14.0,
+          "fibre_g": 11.0
+        }
+      },
+      {
+        "nome": "Variante B – con pollo al limone",
+        "porzioni": 1,
+        "giorni": [
+          "mercoledì"
+        ],
+        "quando": "lunedì",
+        "istruzioni": "Taglia il pollo a cubetti, cuocilo in padella antiaderente 7-8 minuti con un goccio d'acqua, sale, pepe e un po' di scorza di limone, poi mettilo nel contenitore.",
+        "ingredienti_extra": [
+          {
+            "nome": "petto di pollo",
+            "quantita": 110,
+            "unita": "g",
+            "grammi": 110,
+            "reparto": "Carne e pesce",
+            "gruppo": null,
+            "opzionale": false
+          },
+          {
+            "nome": "sale",
+            "quantita": null,
+            "unita": "q.b.",
+            "grammi": null,
+            "reparto": "Olio condimenti e spezie",
+            "gruppo": null,
+            "opzionale": false
+          },
+          {
+            "nome": "pepe",
+            "quantita": null,
+            "unita": "q.b.",
+            "grammi": null,
+            "reparto": "Olio condimenti e spezie",
+            "gruppo": null,
+            "opzionale": false
+          }
+        ],
+        "nutrizione_porzione": {
+          "kcal": 647,
+          "proteine_g": 47.7,
+          "carboidrati_g": 82.6,
+          "grassi_g": 13.3,
+          "fibre_g": 7.0
+        }
+      },
+      {
+        "nome": "Variante C – con uovo sodo e spinacino",
+        "porzioni": 1,
+        "giorni": [
+          "giovedì"
+        ],
+        "quando": "lunedì",
+        "istruzioni": "Rassoda l'uovo il lunedì (9 minuti da quando l'acqua bolle) e tienilo col guscio in frigo; giovedì sgusciala e taglialo sulla pastina calda insieme allo spinacino crudo, portato a parte.",
+        "ingredienti_extra": [
+          {
+            "nome": "uovo",
+            "quantita": 1,
+            "unita": "pz",
+            "grammi": 50,
+            "reparto": "Latticini e uova",
+            "gruppo": null,
+            "opzionale": false
+          },
+          {
+            "nome": "spinacino",
+            "quantita": 30,
+            "unita": "g",
+            "grammi": 30,
+            "reparto": "Frutta e verdura",
+            "gruppo": null,
+            "opzionale": false
+          }
+        ],
+        "nutrizione_porzione": {
+          "kcal": 601,
+          "proteine_g": 28.3,
+          "carboidrati_g": 82.6,
+          "grassi_g": 16.7,
+          "fibre_g": 7.0
+        }
+      }
+    ],
+    "conservazione_giorni": 3,
+    "riscaldamento": "microonde 800 W, 2 min con 2-3 cucchiai d'acqua o brodo, mescola e altri 40-60 s"
+  }
+}

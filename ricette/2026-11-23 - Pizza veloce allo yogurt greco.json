@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "titolo": "Pizza veloce allo yogurt greco senza lievitazione",
+  "file_md": "2026-11-23 - Pizza veloce allo yogurt greco.md",
+  "data_aggiunta": "2026-11-23",
+  "fonte": {
+    "tipo": "instagram",
+    "profilo": "giuseppe_healthy",
+    "url": "https://www.instagram.com/giuseppe_healthy/reel/DgFRea3NxEp/",
+    "codice_post": "DgFRea3NxEp"
+  },
+  "categorie": [
+    "cena",
+    "cena post palestra"
+  ],
+  "porzioni": 2,
+  "tempo_totale_min": 35,
+  "tempo_attivo_min": 10,
+  "difficolta": "facile",
+  "tipo_piatto": "piatto unico",
+  "tag": [
+    "vegetariano",
+    "forno"
+  ],
+  "nutrizione_porzione": {
+    "kcal": 625,
+    "proteine_g": 36.3,
+    "carboidrati_g": 87.2,
+    "grassi_g": 14.0,
+    "fibre_g": 3.2
+  },
+  "ingredienti": [
+    {
+      "nome": "farina 00",
+      "quantita": 220,
+      "unita": "g",
+      "grammi": 220,
+      "reparto": "Pasta riso e cereali",
+      "gruppo": "Base",
+      "opzionale": false
+    },
+    {
+      "nome": "yogurt greco 0%",
+      "quantita": 220,
+      "unita": "g",
+      "grammi": 220,
+      "reparto": "Latticini e uova",
+      "gruppo": "Base",
+      "opzionale": false
+    },
+    {
+      "nome": "lievito istantaneo per salati",
+      "quantita": 1,
+      "unita": "cucchiaino",
+      "grammi": 4,
+      "reparto": "Altro",
+      "gruppo": "Base",
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 2,
+      "unita": "cucchiaino",
+      "grammi": 10,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Base",
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Base",
+      "opzionale": false
+    },
+    {
+      "nome": "origano",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Base",
+      "opzionale": false
+    },
+    {
+      "nome": "passata di pomodoro",
+      "quantita": 150,
+      "unita": "g",
+      "grammi": 150,
+      "reparto": "Legumi e conserve",
+      "gruppo": "Condimento",
+      "opzionale": false
+    },
+    {
+      "nome": "mozzarella light",
+      "quantita": 125,
+      "unita": "g",
+      "grammi": 125,
+      "reparto": "Latticini e uova",
+      "gruppo": "Condimento",
+      "opzionale": false
+    },
+    {
+      "nome": "olio extravergine d'oliva",
+      "quantita": 1,
+      "unita": "cucchiaino",
+      "grammi": 5,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Condimento",
+      "opzionale": false
+    },
+    {
+      "nome": "sale",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Condimento",
+      "opzionale": false
+    },
+    {
+      "nome": "pepe",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Olio condimenti e spezie",
+      "gruppo": "Condimento",
+      "opzionale": false
+    },
+    {
+      "nome": "basilico",
+      "quantita": null,
+      "unita": "q.b.",
+      "grammi": null,
+      "reparto": "Frutta e verdura",
+      "gruppo": "Condimento",
+      "opzionale": false
+    }
+  ],
+  "pranzo_ufficio": null
+}
